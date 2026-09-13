@@ -4,7 +4,7 @@ from app.database import DatabaseManager
 from app.worker import start_worker
 
 app = FastAPI(title="Logistics Operations API")
-db = DatabaseManager() # Instância global do banco
+db = DatabaseManager()
 
 @app.get("/")
 async def root():
